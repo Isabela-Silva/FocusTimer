@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTimer 2.0</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script type="module" src="src/main.js" defer></script>
+</head>
+<body>
+  <div class="app"> 
+    <div class="section-timer">
+      <section id="timer flex">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+  
+      <div class="controls flex">
+        <button class="ph-bold ph-play-circle">
+          <span class="sr-only">Iniciar contador</span>
+        </button>
+        <button class="ph-bold ph-pause">
+          <span class="sr-only">Pausar contador</span>
+        </button>
+        <button class="ph-bold ph-plus-circle">
+          <span class="sr-only">Aumentar cinco minutos</span>
+        </button>
+        <button class="ph-bold ph-minus-circle">
+          <span class="sr-only">Diminuir cinco minutos</span>
+        </button>
+      </div>
+    </div>
+  
+    <div class="musics">
+      <button class="ph-bold ph-tree-evergreen">
+        <span class="sr-only">Floresta</span>
+      </button>
+      <button class="ph-bold ph-cloud-rain">
+        <span class="sr-only">Chuva</span>
+      </button>
+      <button class="ph-bold ph-storefront">
+        <span class="sr-only">Cafeteria</span>
+      </button>
+      <button class="ph-bold ph-fire">
+        <span class="sr-only">Lareira</span>
+      </button>
+    </div>  
+  </div>
+  
+</body>
+</html>
