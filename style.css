@@ -5,11 +5,12 @@
 }
 
 :root {
-  font-size: clamp(40%, 1% + 2vw, 62.5%)
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
 }
 body {
   display: grid;
   height: 100vh;
+  max-width: 100%;
   place-content: center;
 }
 .sr-only {
@@ -28,29 +29,60 @@ body {
 }
 .app {
   display: flex;
-  gap: 154px;
+  gap: 9.6rem;;
+}
+.section-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 #timer {
   color: #323238;
   font-family: Roboto;
-  font-size: 9.6rem;
+  font-size: 6.9rem;
   font-weight: 500;
   
 }
+
+
 .controls {
   display: flex;
-  margin-top: 1.6rem;
+  /* margin-top: 1.6rem; */
+  gap: 2.5rem;
   padding: 2.2rem 4rem;
 }
 
-.musics button {
+.controls button {
+  background-color: transparent;
+  border: 0;
+  font-size: 3rem;
+  color: #323238;
+}
+.musics {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Cria duas colunas */
   grid-template-rows: repeat(2, 1fr);
-  gap: 2rem;
-  padding: 4.3rem 4.7rem;
+  grid-gap: 2rem;
+}
+.musics button {
+  width: 8.6rem;
+  height: 9.5rem;
   border-radius: 1.5rem;
-  border: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* border: none; */
+  /* background-color: transparent; */
+  border: 0;
+  cursor: pointer;
 
-  color: #E1E1E6;
+  font-size: 3.2rem;
+
+  background-color: #E1E1E6;
+  color: #323238;
+}
+.musics button:hover {
+  background-color: #02799D;
+
 }
